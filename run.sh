@@ -94,4 +94,11 @@ for ((i=0; i<${#modes[@]}; i++)); do
     echo "Distance: $distance meters"
     echo "Duration: $duration seconds"
     echo "-------------------------"
+
+    echo "$origin;$destination" >> output.txt
+    echo "Transportation mode: $mode" >> output.txt
+    echo "Distance: $distance meters" >> output.txt
+    echo "Duration: $duration seconds" >> output.txt
+    echo "-------------------------" >> output.txt
+
 done
