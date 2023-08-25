@@ -55,6 +55,16 @@ sleep 5
 # Section 2: Send a Request to Backends
 #######################################
 
+if ! command -v jq &> /dev/null; then
+    read -p "jq is required for this script. Do you want to install it?[apt] (y/n) " choice
+    if [[ $choice == [Yy] ]]; then
+        sudo apt-get install -y jq
+    else
+        echo "jq is not installed. Please install jq to continue."
+        exit 1
+    fi
+fi
+
 origin="51.42838,35.80697"
 destination="51.42088,35.68590"
 
