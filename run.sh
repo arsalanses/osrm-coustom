@@ -25,7 +25,9 @@ download_file() {
 }
 
 build_image() {
-    docker compose build
+    docker compose build osrm-driving
+    docker compose build osrm-foot
+    docker compose build osrm-motorcycle
 }
 
 run_container() {
