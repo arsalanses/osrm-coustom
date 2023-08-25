@@ -65,8 +65,19 @@ if ! command -v jq &> /dev/null; then
     fi
 fi
 
-origin="51.42838,35.80697"
-destination="51.42088,35.68590"
+read -p "Enter the origin for OSRM (empty allowed):[51.42838,35.80697] " origin
+read -p "Enter the destination for OSRM (empty allowed):[51.42088,35.68590] " destination
+
+default_origin="51.42838,35.80697"
+default_destination="51.42088,35.68590"
+
+if [[ -z "$origin" ]]; then
+    origin="$default_origin"
+fi
+
+if [[ -z "$destination" ]]; then
+    destination="$default_destination"
+fi
 
 modes=("driving" "foot" "bike")
 ports=("5000" "5001" "5002")
