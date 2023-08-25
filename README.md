@@ -7,7 +7,7 @@
 This repository contains a docker-compose and instructions to set up an OSRM (Open Source Routing Machine) backend.
 
 <p align="center">
-    <img src="./architecture.png" alt="diagram" width="60%">
+    <img src="./architecture.png" alt="diagram">
 </p>
 
 ## Prerequisites
