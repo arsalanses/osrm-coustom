@@ -51,8 +51,6 @@ build_image
 echo "Starting the Docker container..."
 run_container
 
-sleep 5
-
 #######################################
 # Section 2: Send a Request to Backends
 #######################################
