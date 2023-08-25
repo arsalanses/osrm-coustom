@@ -8,7 +8,7 @@ set -e
 
 image_name="osrm-backend-custom"
 image_tag="latest"
-read -p "Enter the URL of the pbf file to download (empty allowed):[IRAN] " file_url
+read -p "Enter the URL of the pbf file to download (empty allowed):[iran-latest.osm.pbf] " file_url
 
 download_file() {
     if [ -n "$file_url" ]; then
