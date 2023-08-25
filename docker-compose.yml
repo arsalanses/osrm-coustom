@@ -1,0 +1,27 @@
+services:
+  osrm-driving:
+    build:
+      context: ./driving
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:5000:5000
+    container_name: osrm-driving
+    restart: unless-stopped
+
+  osrm-foot:
+    build:
+      context: ./foot
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:5001:5000
+    container_name: osrm-foot
+    restart: unless-stopped
+
+  osrm-motorcycle:
+    build:
+      context: ./motorcycle
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:5002:5000
+    container_name: osrm-motorcycle
+    restart: unless-stopped
