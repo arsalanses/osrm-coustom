@@ -6,8 +6,6 @@ set -e
 # Section 1: Setup Docker container
 #######################################
 
-image_name="osrm-backend-custom"
-image_tag="latest"
 read -p "Enter the URL of the pbf file to download (empty allowed):[iran-latest.osm.pbf] " file_url
 
 download_file() {
