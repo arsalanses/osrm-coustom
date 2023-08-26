@@ -16,6 +16,16 @@ This repository contains a docker-compose and instructions to set up an OSRM (Op
 - jq: Command-line JSON processor, Make sure you have jq installed on your system. `sudo apt install jq`
 
 ## Usage Method 1
+1. Open a terminal or command prompt and navigate to the cloned repository directory.
+
+2. Run the script by executing the following command:
+    ```sh
+    chmod +x run.sh
+    ./run.sh
+    ```
+- Follow the prompts and provide the requested information
+
+## Usage Method 2
 
 1. Clone this repository:
 
@@ -58,12 +68,3 @@ This repository contains a docker-compose and instructions to set up an OSRM (Op
 
 7. Customize and explore:
 - Feel free to customize the Dockerfile and explore the various features and options provided by OSRM. You can refer to the official OSRM documentation for more details: https://github.com/Project-OSRM/osrm-backend
-
-## Usage Method 2
-1. Open a terminal or command prompt and navigate to the cloned repository directory.
-
-2. Run the script by executing the following command:
-    ```sh
-    ./run.sh
-    ```
-- Follow the prompts and provide the requested information
